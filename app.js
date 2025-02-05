@@ -118,12 +118,17 @@ console.log(bigFromN,smallFromN);
 // 📥 Input: [1, 2, 3, 4]
 //  📤 Output: [1, 1, 2, 2, 3, 3, 4, 4]
 
-// arr=[1, 2, 3, 4];
-
-
-// for (let i=1;i<=arr.length;i++){
-//     arr[i+1]=i+1;
-// }console.log(arr);
+arr=[1, 2, 3, 4];
+let len=arr.length;
+let OneArr=[];
+let new_Arr=[];
+for (let i=0;i<len;i++){
+    OneArr=[];
+    for (let j=0;j<2;j++){
+        OneArr.push(arr[i]);
+    }
+    new_Arr.push(OneArr);
+}console.log(new_Arr.flat());
 // Array10.n ta elementdan tashkil topgan massiv berilgan.Massivning oxiridan boshlab har bir ikkinchi elementni chiqaruvchi programma tuzing.
 // 📥 Input: [4, 5, 7, 8, 6, 9, 10, 15]
 //  📤 Output: [15, 9, 8, 5]
